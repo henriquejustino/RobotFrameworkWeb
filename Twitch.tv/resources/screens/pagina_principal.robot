@@ -15,6 +15,9 @@ ${HOME_TXT_JUNTESE}             //h4[@class='CoreText-sc-1txzju1-0 ScTitleText-s
 ${HOME_TXT_PROCURAR}            //h1[@class='CoreText-sc-1txzju1-0 ScTitleText-sc-d9mj2s-0 dDMxrZ igzOaC tw-title'][contains(.,'Procurar')]
 ${HOME_BTN_LOOTPRIME}           //button[contains(@aria-label,'Prime oferece')]
 ${HOME_TXT_RESGATE_PRIME}       //h4[@class='CoreText-sc-1txzju1-0'][contains(.,'Resgate com o Prime Gaming')]
+${HOME_BTN_MAIS}                //button[@aria-label='Mais']
+
+${HOME_TXT_MAIS-GREAL}          //p[contains(.,'Geral')]
 
 
 *** Keywords ***
@@ -46,6 +49,11 @@ Verificar o título da pagina 'Loot Prime' contendo o texto "${titulo}"
     Wait Until Page Contains    text=${titulo}
     Wait Until Element Is Visible    locator=${HOME_TXT_RESGATE_PRIME}
 
+Verificar que a pagina de 'Mais' com o titulo "${titulo}"
+    [Documentation]    Verificar que a pagina de 'Mais'
+    Wait Until Page Contains    text=${titulo}
+    Wait Until Element Is Visible    locator=${HOME_TXT_MAIS-GREAL}
+
 Clicar no botão 'Entrar'
     [Documentation]    Clicar no botão 'Entrar'
     Wait Until Element Is Visible    locator=${HOME_BTN_ENTRAR}
@@ -65,3 +73,9 @@ Clicar no botão 'Loot Prime'
     [Documentation]    Clicar no botão 'Loot Prime'
     Wait Until Element Is Visible    locator=${HOME_BTN_LOOTPRIME}
     Click Element    locator=${HOME_BTN_LOOTPRIME}
+
+Clicar no botão 'Mais'
+    [Documentation]    Clicar no botão 'Mais' (...)
+    Wait Until Element Is Visible    locator=${HOME_BTN_MAIS}
+    Click Element    locator=${HOME_BTN_MAIS}
+

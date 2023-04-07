@@ -50,3 +50,12 @@ Home-CT-06 - Acessar o Loot Prime
     Verificar todos os elementos da Home Page
     Clicar no botão 'Loot Prime'
     Verificar o título da pagina 'Loot Prime' contendo o texto "Resgate com o Prime Gaming"
+
+Home-CT-07 - Acessar a pagina de Mais
+    [Documentation]    Acessar a pagina de Mais
+    [Tags]    pagina_inicial
+    Acessar a home page da twitch.tv
+    Verificar todos os elementos da Home Page
+    Clicar no botão 'Mais'
+    Verificar que a pagina de 'Mais' com o titulo "Geral"
+

@@ -1,3 +1,5 @@
+Projeto iniciado no dia 07/04/2023
+
 Esse projeto é referente a automação de testes utilizando o RobotFramework utilizando algumas bibliotecas como por exemplo: SeleniumLibrary.
 
 Existe algumas algumas formas de automação de testes e diversos tipos de validações.

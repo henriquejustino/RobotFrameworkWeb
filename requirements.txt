@@ -1,0 +1,6 @@
+robotframework==6.0
+robotframework-databaselibrary
+robotframework-seleniumlibrary
+robotframework-databaselibrary
+robotframework-requests
+robotframework-faker
